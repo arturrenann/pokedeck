@@ -1,0 +1,17 @@
+.content {
+    margin-top: 10px;
+}
+
+.card{
+    background-color: #f1f3f5;
+}
+.mat-card-header{
+    justify-content: center;
+}
+.titulo {
+    display: flex;
+    color: black;
+    text-align: center;
+}
+
+

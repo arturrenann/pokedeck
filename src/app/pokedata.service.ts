@@ -13,7 +13,7 @@ export class PokedataService {
 
   //getpokemons
   getPokemons(): Observable<any[]> {
-    return this.http.get<any[]>(`https://pokeapi.co/api/v2/pokemon`)
+    return this.http.get<any[]>(`https://pokeapi.co/api/v2/pokemon?limit=100&offset=0`)
   }
 
   getMorePokemons(name: any) {

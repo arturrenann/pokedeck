@@ -22,7 +22,6 @@ export class PokelistComponent implements OnInit {
         this.pokeService.getMorePokemons(pokename.name)
         .subscribe((uniqueResponse:any) =>{
           this.pokelist.push(uniqueResponse)
-          console.log(uniqueResponse)
         });
       });
      });

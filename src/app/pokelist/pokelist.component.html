@@ -1,11 +1,11 @@
 <div class="content">
-  <div fxLayout="row wrap" fxLayoutGap="16px grid" >
-    <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let poke of pokelist" >
-      <mat-card class="mat-elevation-z4" class="card">
+  <div fxLayout="row wrap" fxLayoutGap="15px grid" >
+    <div fxFlex="20%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let poke of pokelist" >
+      <mat-card class="mat-elevation-z4" class="card" [style.background-color]="getBackgroundColor(poke.types[0].type.name)">
         <mat-card-header>
           <mat-card-title class="titulo">{{poke.species.name | uppercase}}</mat-card-title>
         </mat-card-header>
-        <img mat-card-image [src]="poke.sprites.front_default">
+        <img mat-card-image [src]="poke.sprites.other.home.front_default">
         <mat-card-content>
           <p>
             <b>Tipo:</b> {{poke.types[0].type.name | uppercase}}
